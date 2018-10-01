@@ -1,3 +1,3 @@
-crontab -l > cron.backup
-cron.backup >> rig-alert.crontab
-crontab < $HOME/rig-alert/rig-alert.crontab
+crontab -l > ./cron.backup
+cat ./cron.backup >> ./rig_alert.crontab
+crontab < $HOME/rig-alert/rig_alert.crontab
