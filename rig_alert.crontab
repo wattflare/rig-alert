@@ -1,1 +1,1 @@
-*/15 * * * * $HOME/rig-alert/rig_alert.sh > $HOME/rig-alert/`date +\%Y\%m\%d\%H\%M\%S`-cron.log 2>&1
+*/15 * * * * $HOME/rig-alert/rig_alert.sh > $HOME/rig-alert/cron.log 2>&1

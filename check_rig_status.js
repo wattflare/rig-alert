@@ -52,14 +52,16 @@ function checkWorkerStatus(apiUrl, account){
     if (err) { return console.log(err); }
     console.log("account: " + account);
     
-    Object.keys(body.workers).forEach(function(worker) {
-      console.log(worker + ":" + body.workers[worker].offline);
-      if(body.workers[worker].offline === true){
-        console.log(worker + " is offline, sending slack alert");
-        var alertMessage = worker + " is offline";
-        sendAlert(alertMessage);
-      }
-    });
+    if(body && body.workers) {
+      Object.keys(body.workers).forEach(function(worker) {
+        console.log(worker + ":" + body.workers[worker].offline);
+        if(body.workers[worker].offline === true){
+          console.log(worker + " is offline, sending slack alert");
+          var alertMessage = worker + " is offline";
+          sendAlert(alertMessage);
+        }
+      });
+    }
   });
 }
 
