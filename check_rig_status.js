@@ -5,9 +5,13 @@ var slack_webhook_url = "https://hooks.slack.com/services/T87S2KJG7/BBDPDGJ91/c7
 var etc_pool = {
   url: "http://etc.miningpool.io/api/accounts/",
   accounts: [
-    "0x087db2890fb62ecbbf9066cbd607c9e115f3b7ee",
-    "0xc89c6c37a31629cb9123f2db7b7c9e85f5275cd1",
-    "0xed318d453f29e38ba11b18959b825b41ad8c678b"
+    "0x087db2890fb62ecbbf9066cbd607c9e115f3b7ee",//Dr. Bautista
+    "0xc89c6c37a31629cb9123f2db7b7c9e85f5275cd1",//Sanjay
+    "0xed318d453f29e38ba11b18959b825b41ad8c678b",//Dr. Amir
+    "0x411d0aa1107eaa2aae72620eca11f84c7e1e2491",//Kris
+    "0x9b791c3d26730ae18c2f14ccccdb0105526cca55",//Zeeshan
+    "0x6142549f7cd1c847bb254b814ea834615e261836",//Cecile
+    "0x267cc3495e7b793906dff33d694c5008ae43a7f6",//Barry
   ]
 };
 
